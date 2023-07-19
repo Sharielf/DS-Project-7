@@ -1,0 +1,13 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<PetalLengthCm &le; 2.45<br/>gini = 0.667<br/>samples = 150<br/>value = [50, 50, 50]<br/>class = Iris-setosa>, fillcolor="#ffffff"] ;
+1 [label=<gini = 0.0<br/>samples = 50<br/>value = [50, 0, 0]<br/>class = Iris-setosa>, fillcolor="#e58139"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<PetalLengthCm &le; 4.75<br/>gini = 0.5<br/>samples = 100<br/>value = [0, 50, 50]<br/>class = Iris-versicolor>, fillcolor="#ffffff"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label=<gini = 0.043<br/>samples = 45<br/>value = [0, 44, 1]<br/>class = Iris-versicolor>, fillcolor="#3de684"] ;
+2 -> 3 ;
+4 [label=<gini = 0.194<br/>samples = 55<br/>value = [0, 6, 49]<br/>class = Iris-virginica>, fillcolor="#9051e8"] ;
+2 -> 4 ;
+}
